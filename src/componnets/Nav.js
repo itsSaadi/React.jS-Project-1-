@@ -1,5 +1,5 @@
 
-import {Link} from "react-router-dom"
+// import {Link} from "react-router-dom"
 
 
 export default function Nav(props) {
@@ -8,10 +8,10 @@ export default function Nav(props) {
       <div>
         <div  className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}  `}>
           <div className="container-fluid">
-            <Link id="title" className="navbar-brand" to='/'>
+            <a id="title" className="navbar-brand" href='/'>
               {" "}
               {props.tit}
-            </Link>
+            </a>
             <button
               className="navbar-toggler"
               type="button"
@@ -29,14 +29,14 @@ export default function Nav(props) {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link id="home" className="nav-link active" aria-current="page" to='/'>
+                  <a id="home" className="nav-link active" aria-current="page" href='/'>
                   Home
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <Link id="about" className="nav-link " to='/about'>
+                  <a id="about" className="nav-link " href='/about'>
                   About Us
-                  </Link>
+                  </a>
                 </li>
               </ul>
               <div className="themes">
