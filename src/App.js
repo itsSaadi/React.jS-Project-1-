@@ -7,7 +7,7 @@ import React, { useState } from 'react'
 import Nav from "./componnets/Nav";
 // import Alert from "./componnets/Alert";
 import About from "./componnets/About"
-import { BrowserRouter,Routes,Route } from "react-router-dom";
+
 
 
 
@@ -47,15 +47,15 @@ document.body.style.color='white'
     <>
     <div className="app">
     
- <BrowserRouter> 
+
  <Nav tit='Text-Analyzer' x  mode={mode} changeMode={changeMode} yl={yellow} gr={green} rd={red}/>
    
   
-  <Routes>
-      <Route path="/" element= {<Text heading='Enter text to Analyze' mode={mode}/>} />
-    <Route  path="/about" element={<About mode={mode} />} />
-  </Routes>
-  </BrowserRouter>
+
+     <Text heading='Enter text to Analyze' mode={mode} />
+   <About mode={mode}  />
+ 
+  
       
  
         </div>
