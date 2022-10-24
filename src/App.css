@@ -1,0 +1,13 @@
+#home{
+    font-weight: bolder;
+}
+#title{
+    font-weight: bolder;
+    color: rgb(169, 110, 224);
+}
+#home:hover{
+    color: brown;
+}
+#title:hover{
+    color: aqua;
+}
